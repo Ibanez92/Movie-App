@@ -1,5 +1,6 @@
 // Initial Values
 const API_KEY = '0f46154c6e7f8134478e0cd0f9b48dc6';
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w500'
 
 const url = 'https://api.themoviedb.org/3/search/movie?api_key=0f46154c6e7f8134478e0cd0f9b48dc6';
 
@@ -10,9 +11,11 @@ const movieSearchable = document.querySelector('#movies-searchable');
 
 function movieSection(movies) {
      return movies.map((movie) => {
-        return `
-        <img src=${movie.poster_path} data-movie-id=${movie.id}/>
-        `;
+        if (movie.poster_path) {
+            return `
+                <img src=${IMAGE_URL + movie.poster_path} data-movie-id=${movie.id}/>
+            `;
+        }
     })
 }
   
