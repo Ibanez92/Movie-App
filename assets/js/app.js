@@ -76,7 +76,12 @@ document.onclick = function(event) {
         console.log('hello world');
         const section = event.target.parentElement; //section
         const content = section.nextElementSibling; //content
-        content.classList.add('conent-display');
+        content.classList.add('content-display');
+    }
+
+    if (target.id === 'content-close') {
+        const content = target.parentElement;
+        content.classList.remove('content-display');
     }
     
 }
