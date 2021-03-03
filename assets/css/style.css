@@ -41,3 +41,11 @@ img:hover {
     transform: scale(.9);
     cursor: pointer;
 }
+.content{
+    border: 1px solid red;
+    height: 300px;
+    display: none;
+}
+.content-display{
+    display: block;
+}

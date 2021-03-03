@@ -8,6 +8,8 @@ const url = 'https://api.themoviedb.org/3/search/movie?api_key=0f46154c6e7f81344
 const buttonElement = document.querySelector('#search');
 const inputElement = document.querySelector('#inputValue');
 const movieSearchable = document.querySelector('#movies-searchable');
+const imgElement = document.querySelector('img');
+
 
 function movieSection(movies) {
      return movies.map((movie) => {
@@ -63,4 +65,18 @@ buttonElement.onclick = function(event) {
 
         inputElement.value = '';
     console.log('Value ', value);
+}
+
+// Event delegation
+document.onclick = function(event) {
+   
+    const target = event.target;
+
+    if (target.tagName.toLowerCase() === 'img') {
+        console.log('hello world');
+        const section = event.target.parentElement; //section
+        const content = section.nextElementSibling; //content
+        content.classList.add('conent-display');
+    }
+    
 }
