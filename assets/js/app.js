@@ -74,7 +74,7 @@ buttonElement.onclick = function (event) {
 };
 
 function createIframe(video) {
-  const iframe = document.createElement("iframe");
+  const iframe = document.createElement('iframe');
   iframe.src = `https://www.youtube.com/embed/${video.key}`;
   iframe.width = 360;
   iframe.height = 315;
@@ -90,7 +90,7 @@ function createVideoTemplate(data, content) {
         console.log("Videos: ", data);
         const videos = data.results;
         const length = videos.length > 4 ? 4 : videos.length;
-        const iframeContainer = document.createElement("div");
+        const iframeContainer = document.createElement('div');
 
         for (let i = 0; i < length; i++) {
             const video = videos[i]; // video
@@ -102,25 +102,26 @@ function createVideoTemplate(data, content) {
 
 // Event delegation
 document.onclick = function (event) {
-  const target = event.target;
+  
+    const target = event.target;
 
-  if (target.tagName.toLowerCase() === "img") {
-    const movieId = target.dataset.movieId;
-    console.log("Movie ID: ", movieId);
-    const section = event.target.parentElement; //section
-    const content = section.nextElementSibling; //content
-    content.classList.add("content-display");
+    if (target.tagName.toLowerCase() === "img") {
+        const movieId = target.dataset.movieId;
+        console.log('Movie ID: ', movieId);
+        const section = event.target.parentElement; //section
+        const content = section.nextElementSibling; //content
+        content.classList.add('content-display');
 
-    const path = `/movie/${movieId}/videos`;
-    const url = generateUrl(path);
-    //fetch movie videos
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => createVideoTemplate(data, content))
-      .catch((error) => {
-        console.log("Error: ", error);
-      });
-  }
+        const path = `/movie/${movieId}/videos`;
+        const url = generateUrl(path);
+        //fetch movie videos
+        fetch(url)
+        .then((res) => res.json())
+        .then((data) => createVideoTemplate(data, content))
+        .catch((error) => {
+            console.log("Error: ", error);
+        });
+    }
 
   if (target.id === "content-close") {
     const content = target.parentElement;

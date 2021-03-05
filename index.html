@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>Movie App</title>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to my movie App</h1>
+        <h1>Welcome to my Movie App</h1>
         <img src="" alt="">
 
         <form>
             <div class="form-group">
-                <input type="text" id="inputValue">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="Search..."
+                id="inputValue">
             </div>
 
-            <button type="submit" id="search">Search a movie</button>
+            <button type="submit" class ="btn" id="search">
+                Search a movie
+            </button>
         </form>
       
     
         <div id="movies-searchable"></div>
         <div id="movies-container"></div>
     </div>
-    
+
     <script src="./assets/js/apiTransaction.js"></script>
     <script src="./assets/js/app.js"></script>
 

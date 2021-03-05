@@ -1,3 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 5px;
+}
+.container {
+    padding: 5px;
+    margin: 0 auto;
+}
+
 .form-group{
     margin-bottom: 1rem;
 }
@@ -32,12 +43,16 @@
     margin-bottom: 50px;
 }
 .movie {
-    margin-bottom: 50px;
+    margin-top: 40px;
 }
 section{
    display: flex;
    width: 100%;
    overflow-x: auto;
+   transition: 250ms auto;
+}
+section .imageContainer {
+    flex: 0 0 auto;
 }
 section img {
     width: 300px;
@@ -52,9 +67,22 @@ img:hover {
     border: 1px solid lightgrey;
     padding: 20px;
     display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
 }
 #content-close {
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    left: 20px;
+}
+.imageContainer {
+    transition: 250ms all;
+    width: 300px;
 }
 .content div{
     display: flex;
