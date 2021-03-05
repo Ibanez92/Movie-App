@@ -23,4 +23,5 @@ Movie App is desktop application that uses Javascript/ES6 and TMDB (The Movie Da
 * target
 
 # Movie-App Demo Video
-https://user-images.githubusercontent.com/69645144/110080499-8b253e80-7d58-11eb-93ae-08942aaef90c.mp4
+
+![Animated GIF-downsized_large](https://user-images.githubusercontent.com/69645144/110084168-a21a5f80-7d5d-11eb-8c81-6fc04d737369.gif)
