@@ -2,7 +2,7 @@
 const buttonElement = document.querySelector("#search");
 const inputElement = document.querySelector("#inputValue");
 const movieSearchable = document.querySelector("#movies-searchable");
-const moviesContainer = document.querySelector('#movie-container')
+const moviesContainer = document.querySelector('#movies-container')
 
 function movieSection(movies) {
   return movies.map((movie) => {
