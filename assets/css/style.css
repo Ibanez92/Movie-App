@@ -43,8 +43,14 @@ img:hover {
 }
 .content{
     border: 1px solid red;
-    height: 300px;
     display: none;
+}
+.content div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
 }
 .content-display{
     display: block;
