@@ -27,6 +27,13 @@
     line-height: 1.5;
     border-radius: .25rem;
 }
+#movies-searchable {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.movie {
+    margin-bottom: 50px;
+}
 section{
    display: flex;
    width: 100%;
@@ -42,8 +49,12 @@ img:hover {
     cursor: pointer;
 }
 .content{
-    border: 1px solid red;
+    border: 1px solid lightgrey;
+    padding: 20px;
     display: none;
+}
+#content-close {
+    cursor: pointer;
 }
 .content div{
     display: flex;
