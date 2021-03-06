@@ -1,5 +1,5 @@
 # Movie-App
-Movie App is a desktop application that uses Javascript/ES6 and TMDB (The Movie Database) Api. When user inputs movie in search bar, the users input title will show movie images and movie trailers from youtube when movie image clicked. Then in order from top to bottom, it shows a row of the upcoming movies, the popular movies and the top rated movies. All 4 are called from the TMDB (The Movie Database) Api database.
+Movie App is a desktop application that uses Javascript/ES6 and TMDB (The Movie Database) Api. When user inputs movie title into the search bar, the users input title will show movie images and movie trailers from youtube when movie image is clicked. Then in order from top to bottom, it shows a row of the upcoming movies, the popular movies and the top rated movies. All 4 are called from the TMDB (The Movie Database) Api database.
 
 Enjoy!
 

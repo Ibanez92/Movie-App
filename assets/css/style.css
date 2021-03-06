@@ -3,7 +3,7 @@ html {
     background-color: rgba(15, 68, 104, 0.719);
 }
 body {
-    margin: 5px;
+    
 }
 .container {
     margin: 0 auto;
@@ -12,6 +12,10 @@ body {
 
 .form-group{
     margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 #inputValue{
     width: 760px;
@@ -98,4 +102,22 @@ img:hover {
 }
 .content-display{
     display: block;
+}
+body h1{
+    justify-content: center;
+    text-align: center;
+    margin-top: 140px;
+}
+form {
+    justify-self: center;
+    align-items: center;
+    
+    
+}
+.btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
 }
