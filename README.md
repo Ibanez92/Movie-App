@@ -15,8 +15,8 @@ Enjoy!
 * parentElement
 * nextElementSibling
 * classList
- * add
- * remove
+* add
+* remove
 * fetch
 * bind
 * setAttribute
